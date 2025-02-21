@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <title>Zaman Çizelgesi</title>
-	<link rel="canonical" href="https://cdn.knightlab.com" />
+    <link rel="canonical" href="https://cdn.knightlab.com" />
     <meta name="description" content="Zaman Çizelgesi">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<meta name="author" content="Cresas emre">
-	<meta name="author" content="Emre Çiftçioğlu">
+    <meta name="author" content="Cresas emre">
+    <meta name="author" content="Emre Çiftçioğlu">
     <!-- FAVICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="libs/orangeline/latest/assets/favicons/apple-touch-icon.png">
     <link rel="manifest" href="libs/orangeline/latest/assets/favicons/manifest.json">
     <link rel="mask-icon" href="libs/orangeline/latest/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    
+    <!-- Yerel JavaScript ve CSS Dosyaları -->
     <script id='timeline-script-tag' type="text/javascript" src="libs/timeline3/latest/js/timeline.js"></script>
     <link rel="stylesheet" href="libs/timeline3/latest/css/timeline.css">
-    <!-- Google Analytics should be handled by Timeline -->
+    
     <base target="_blank">
     <!-- Style-->
     <style>
@@ -31,24 +33,23 @@
             height: 100%;
         }
     </style>
-	
-	  <style>
+    
+    <style>
        .bottom-left-box {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 1.7cm;
-    height: 0.4cm;
-    background-color: white;
-  
-    z-index: 9999; /* top */
-}
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 1.7cm;
+            height: 0.4cm;
+            background-color: white;
+            z-index: 9999; /* top */
+        }
     </style>
 </head>
 <body>
     <!-- BEGIN Timeline Embed -->
     <div id="timeline-embed"></div>
-	<div class="bottom-left-box"></div>
+    <div class="bottom-left-box"></div>
     <!-- Override -->
     <script type="text/javascript">
         function ready(tr) {
@@ -72,7 +73,6 @@
             return "https://cdn.knightlab.com/libs/timeline3/latest/";
         }
         function addOembedTag() {
-            // it's not clear that any tools execute this JS to get the URL, but maybe?
             var oembed_link = document.createElement('link');
             oembed_link['rel'] = 'alternate';
             oembed_link['type'] = 'application/json+oembed';
@@ -86,7 +86,6 @@
             if (typeof(height) != 'string' && typeof(height) != 'number') {
                 height = '100%'
             }
-            // default containerId would be 'timeline-embed'
             t = document.createElement('div');
             t.style.position = 'relative';
             te = document.getElementById(containerId);
@@ -110,11 +109,7 @@
                 te.style.height = (height) + 'px';
             }
         }
-        /**
-         * by
-         * cresas
-         * emre
-         */
+
         function optionsFromUrlParams() {
             var param_str = window.location.href.slice(window.location.href.indexOf('?') + 1);
             if (param_str.match('#')) {
@@ -128,35 +123,36 @@
             }
             return url_vars;
         };
-        ready(function() {
-        setPageLanguage();
-        var embed_path = computeEmbedPath();
-        addOembedTag();
-        var options = optionsFromUrlParams();
-        createEmbedDiv('timeline-embed', options.width, options.height);
-        
-        // Spreadsheets LNK
-        options.ga_measurement_id = 'G-LVEFKMG087';
-        if (typeof options.source == 'undefined') {
-            options.source = '10IaSDWQYFxy1wiAa9qVzFmK6QbWG0DNjB2237rPp_IY';
-        }
-        if (typeof options.font == 'undefined') {
-            options.font = 'Default';
-        }
-        if (typeof options.lang == 'undefined') {
-            options.lang = 'tr';
-        }
-        if (typeof options.initial_zoom == 'undefined') {
-            options.initial_zoom = '2';
-        }
-        if (typeof options.height == 'undefined') {
-            options.height = '650';
-        }
-        
-        options.soundcite = true;
-        window.options = options;
-        window.timeline = new TL.Timeline('timeline-embed', options.source, options);
-    });
-</script>
 
+        ready(function() {
+            setPageLanguage();
+            var embed_path = computeEmbedPath();
+            addOembedTag();
+            var options = optionsFromUrlParams();
+            createEmbedDiv('timeline-embed', options.width, options.height);
+            
+            // Spreadsheets LNK
+            options.ga_measurement_id = 'G-LVEFKMG087';
+            if (typeof options.source == 'undefined') {
+                options.source = '1D4L2ZfekBLewFP47S8hEBaIEa49qRGDJkYBLqdIYbEg';
+            }
+            if (typeof options.font == 'undefined') {
+                options.font = 'Default';
+            }
+            if (typeof options.lang == 'undefined') {
+                options.lang = 'tr';
+            }
+            if (typeof options.initial_zoom == 'undefined') {
+                options.initial_zoom = '2';
+            }
+            if (typeof options.height == 'undefined') {
+                options.height = '650';
+            }
+            
+            options.soundcite = true;
+            window.options = options;
+            window.timeline = new TL.Timeline('timeline-embed', options.source, options);
+        });
+    </script>
+</body>
 </html>
