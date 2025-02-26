@@ -3893,7 +3893,7 @@ TL.Language.languages = {
             wikipedia:          "en" // the two letter code at the beginning of the Wikipedia subdomain for this language
         },
 		messages: {
-			loading: 			            		  "Loading",
+			loading: 			            		  "Yükleniyor",
 			wikipedia: 			            		"From Wikipedia, the free encyclopedia",
 			error: 				            			"Error",
       contract_timeline:              "Contract Timeline",
