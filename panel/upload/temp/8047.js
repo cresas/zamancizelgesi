@@ -1,14 +1,5 @@
 {
   "scale": "human",
-  "title": {
-    "text": {
-      "headline": "Soğuk Savaş Dönemi Olayları",
-      "text": "Gelişmeleri ok işaretlerini tıklayarak inceleyebilirsiniz."
-    },
-    "media": {
-      "url": "https://cresas.github.io/zamancizelgesi/img/cover.jpg"
-    }
-  },
   "events": [
     {
       "start_date": {"year": "1946", "month": "12", "day": ""},
@@ -18,6 +9,7 @@
       },
       "media": {"url": "https://cresas.github.io/zamancizelgesi/img/1.jpg"}
     },
+
     {
       "start_date": {"year": "1954", "month": "7", "day": "21"},
       "text": {
