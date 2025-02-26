@@ -34,7 +34,7 @@
         "headline": "16-28 Ekim 1962 - Küba Buhranı",
         "text": "Sovyetler Birliği'nin Küba'ya yerleştirdiği füzeler nedeniyle ABD ile SSCB arasında nükleer savaş riski yaşandı. Uzlaşmayla kriz sona erdi."
       },
-      "media": {"url": "https://cresas.github.io/zamancizelgesi/img/4.jpg"}
+      "media": {"url": "https://cresas.github.io/zamancizelgesi/img/4.png"}
     },
     {
       "start_date": {"year": "1965", "month": "3", "day": "2"},
