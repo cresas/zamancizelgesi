@@ -3901,7 +3901,7 @@ TL.Language.languages = {
       loading_content:                "Loading Content",
       expand_timeline:                "Expand Timeline",
       loading_timeline:               "Loading Timeline... ",
-      swipe_to_navigate:              "Swipe to Navigate<br><span class='tl-button'>OK</span>",
+      swipe_to_navigate:              "Gezinmek İçin Kaydırın<br><span class='tl-button'>TAMAM</span>",
       unknown_read_err:               "An unexpected error occurred trying to read your spreadsheet data",
 			invalid_url_err: 								"Unable to read Timeline data. Make sure your URL is for a Google Spreadsheet or a Timeline JSON file.",
       network_err:                    "Unable to read your Google Spreadsheet. Make sure you have published it to the web.",
